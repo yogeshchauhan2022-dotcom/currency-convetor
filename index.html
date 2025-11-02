@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Currency Converter</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="converter-container">
+    <h1>💱 Currency Converter</h1>
+
+    <div class="input-group">
+      <input type="number" id="amount" placeholder="Enter amount" min="0" value="1">
+    </div>
+
+    <div class="dropdowns">
+      <!-- From Section -->
+      <div class="currency-select">
+        <img id="from-flag" src="https://flagsapi.com/US/flat/64.png" alt="flag">
+        <input type="text" id="from-search" placeholder="Search country...">
+        <select id="from-currency"></select>
+      </div>
+
+      <span>➡️</span>
+
+      <!-- To Section -->
+      <div class="currency-select">
+        <img id="to-flag" src="https://flagsapi.com/IN/flat/64.png" alt="flag">
+        <input type="text" id="to-search" placeholder="Search country...">
+        <select id="to-currency"></select>
+      </div>
+    </div>
+
+    <div id="result">Loading rates...</div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
